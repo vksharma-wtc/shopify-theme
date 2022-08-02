@@ -1,5 +1,4 @@
-<div>
-  <img src =""/>
+<div class="banner" style="background-image:url({{ section.settings.banner_image | image_url:'master' }})">
 </div>
 {% schema %}
   {
@@ -9,6 +8,11 @@
         "id":"banner_title",
         "type":"text",
         "label":"Banner Title"
+      },
+      {
+        "id":"banner_image",
+        "type":"image_picker",
+        "label":"Banner Image"
       }
     ],
     "presets": [
