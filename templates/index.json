@@ -211,7 +211,8 @@
     "1659453306b5a998d7": {
       "type": "banner-sec",
       "settings": {
-        "banner_title": ""
+        "banner_title": "",
+        "banner_image": "shopify:\/\/shop_images\/Banner.png"
       }
     }
   },
