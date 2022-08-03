@@ -1,0 +1,32 @@
+<div class="banner" style="background-image:url({{ section.settings.banner_image | image_url:'master' }})">
+  {{ section.settings.banner_titl }}
+ <img src={{ section.settings.banner_image | image_url:'master' }} />
+</div>
+{% schema %}
+  {
+    "name": "Banner Section",
+    "settings": [
+      {
+        "id":"banner_title",
+        "type":"text",
+        "label":"Banner Title"
+      },
+      {
+        "id":"banner_image",
+        "type":"image_picker",
+        "label":"Banner Image"
+      }
+    ],
+    "presets": [
+      {
+        "name":"Banner Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
