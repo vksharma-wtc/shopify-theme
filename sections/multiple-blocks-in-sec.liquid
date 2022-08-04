@@ -1,17 +1,18 @@
 <div class="container-fluid">
   <div class="row">
     
-     <div class="col-md-12">
+     
 	 {% for block in section.blocks %}
 	    {% if block.type == 'left_section' %}
+          <div class="col-md-6">
 					<div>
                      <img src= "{{ block.settings.left_image | img_url:'master' }}" />
                     </div>
 					{{ block.settings.left_content }}
-			
+			</div> 
 		{% endif %}
 	  {% endfor %}
-	</div> 
+	
 </div>	
 </div>
 
