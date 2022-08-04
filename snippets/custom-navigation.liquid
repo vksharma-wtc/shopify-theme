@@ -1,1 +1,109 @@
-<p>This is my custom navigation</p>
+<ul class="main-navigation">
+  {%- for link in linklists.main-menu.links -%}
+  <li>
+    <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+      {{ link.title }}
+    </a>
+
+    {%- if link.links != blank -%}
+    <ul>
+      {%- for child_link in link.links -%}
+      <li>
+        <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+          {{ child_link.title }}
+        </a>
+
+        {%- if child_link.links != blank -%}
+        <ul>
+          {%- for grandchild_link in child_link.links -%}
+          <li>
+            <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+              {{ grandchild_link.title }}
+            </a>
+          </li>
+          {%- endfor -%}
+        </ul>
+        {%- endif -%} 
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+
+  </li>
+  {%- endfor -%}
+</ul>
+
+<style>
+ul.main-navigation {
+    list-style: none;
+    margin: 0;
+    background: #1bc2a2;
+    padding: 0 50px;
+}
+
+ul.main-navigation li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+ul.main-navigation li ul { display: none; }
+
+ul.main-navigation li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul.main-navigation li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+ul.main-navigation li:hover > ul {
+    display: block;
+    position: absolute;
+    padding-left: 0;
+    min-width: 150px;
+}
+
+ul.main-navigation li:hover li { float: none; }
+
+ul.main-navigation li:hover a { background: #1bc2a2; }
+
+ul.main-navigation li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul.main-navigation ul ul {
+    left: 100%;
+    top: 0; 
+    padding-left: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul.main-navigation:before,
+ul.main-navigation:after,
+ul.main-navigation ul:before,
+ul.main-navigation ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul.main-navigation:after,
+ul.main-navigation ul:after { 
+  clear: both; 
+}
+</style>
