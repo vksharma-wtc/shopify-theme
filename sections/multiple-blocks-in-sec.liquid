@@ -6,7 +6,7 @@
 	    {% if block.type == 'left_section' %}
 			
 					<div>
-                      ppp
+                      {{ block.settings.left_image | img_url:'master' }}
                     </div>
 			
 					{{ block.settings.left_content }}
