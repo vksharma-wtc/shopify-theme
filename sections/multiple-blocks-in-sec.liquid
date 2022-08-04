@@ -4,11 +4,9 @@
      <div class="col-md-6>
 	 {% for block in section.blocks %}
 	    {% if block.type == 'left_section' %}
-			
 					<div>
-                      {{ block.settings.left_image | img_url:'master' }}
+                     <img src= {{ block.settings.left_image | img_url:'master' }} />
                     </div>
-			
 					{{ block.settings.left_content }}
 			
 		{% endif %}
