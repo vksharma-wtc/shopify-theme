@@ -210,6 +210,26 @@
     },
     "1659618345267e5aec": {
       "type": "multiple-blocks-in-sec",
+      "blocks": {
+        "b7cf0a0c-bc6c-4453-9f79-3c8b53a89444": {
+          "type": "left_section",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/download.jpg",
+            "left_content": "dsfsdfsfs"
+          }
+        },
+        "54ad9e07-4f8c-47f8-9e98-36204bc84546": {
+          "type": "left_section",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/download.jpg",
+            "left_content": "dfsdfsdfsdf"
+          }
+        }
+      },
+      "block_order": [
+        "b7cf0a0c-bc6c-4453-9f79-3c8b53a89444",
+        "54ad9e07-4f8c-47f8-9e98-36204bc84546"
+      ],
       "settings": {
       }
     }
