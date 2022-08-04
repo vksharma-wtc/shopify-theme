@@ -217,10 +217,18 @@
             "left_image": "shopify:\/\/shop_images\/download.jpg",
             "left_content": "dsfsdfsfs"
           }
+        },
+        "429c0189-ab5f-488f-b229-08b126813a24": {
+          "type": "left_section",
+          "settings": {
+            "left_image": "shopify:\/\/shop_images\/download.jpg",
+            "left_content": "ttttttttttttttttttttttttttttttttttttttt"
+          }
         }
       },
       "block_order": [
-        "b7cf0a0c-bc6c-4453-9f79-3c8b53a89444"
+        "b7cf0a0c-bc6c-4453-9f79-3c8b53a89444",
+        "429c0189-ab5f-488f-b229-08b126813a24"
       ],
       "settings": {
       }
