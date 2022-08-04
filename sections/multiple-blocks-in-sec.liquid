@@ -5,7 +5,7 @@
 	 {% for block in section.blocks %}
 	    {% if block.type == 'left_section' %}
 					<div>
-                     <img src= {{ block.settings.left_image | img_url:'master' }} />
+                     <img src= '{{ block.settings.left_image | img_url:'master' }}' />
                     </div>
 					{{ block.settings.left_content }}
 			
