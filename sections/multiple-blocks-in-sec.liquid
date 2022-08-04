@@ -1,8 +1,10 @@
 <div class="multiple_block_sec">
 <div class="container">
   <div class="row">
+    
     <div class="col-md-6>
 	 {% for block in section.blocks %}
+       
 		<div class="row col">
 			<div class="col-md-4">
 				<img src="{{ block.settings.left_image | img_url:'master' }}" />
@@ -11,20 +13,25 @@
 				{{ block.settings.left_content }}
 			</div>
 		</div>
+    
 	  {% endfor %}
 	</div> 
 	
  
   
 	<div class="col-md-6>
+	 {% for block in section.blocks %}
+       
 		<div class="row col">
 			<div class="col-md-4">
-				<img src="{{}}" />
+				<img src="{{ block.settings.left_image | img_url:'master' }}" />
 			</div>
 			<div class="col-md-8">
-				This is my Right panel
+				{{ block.settings.left_content }}
 			</div>
 		</div>
+    
+	  {% endfor %}
 	</div> 
 	
 	
