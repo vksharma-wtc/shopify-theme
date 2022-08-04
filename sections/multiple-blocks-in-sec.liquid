@@ -1,10 +1,18 @@
 <div class="multiple_block_sec">
   <div class="row">
     
-    <div class="col-md-6>
+     <div class="col-md-6>
 	 {% for block in section.blocks %}
-				<img src="{{ block.settings.left_image | img_url:'master' }}" />
-				{{ block.settings.left_content }}
+	    {% if block.type == 'left_section' %}
+			<div class="row col">
+				<div class="col-md-4">
+					<img src="{{ block.settings.left_image | img_url:'master' }}" />
+				</div>
+				<div class="col-md-8">
+					{{ block.settings.left_content }}
+				</div>
+			</div>
+		{% endif %}
 	  {% endfor %}
 	</div> 
 	
