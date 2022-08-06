@@ -11,10 +11,10 @@
 		{% endif %}
 	  {% endfor %}
 
-<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
-{{ site.users[0] }}
-{{ site.users[1] }}
-{{ site.users[-1] }}
+{% capture my_variable %}
+  I am the value of the variable
+{% endcapture %}
+<p>{{my_variable}}</p>
 
 
 
