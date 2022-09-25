@@ -17,7 +17,7 @@
     };
     $.ajax({
     type: 'POST',
-    url: 'https://0fb9-122-161-50-117.in.ngrok.io/gupsup/sendotp.php',
+    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
     data: formData,
     success: function (data) { 
        console.log(data);
