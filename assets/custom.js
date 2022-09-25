@@ -12,12 +12,11 @@
   // Add custom code below this line
   //---------otp sent-----------//
     var formData = {
-    mobile : '9999999999',
-    message :'Your OTP code is %code%'
+    mobile : '9999999999'
     };
     $.ajax({
-    type: 'GET',
-    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp?mobile=9999999999',
+    type: 'POST',
+    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
     data: formData,
     success: function (data) { 
        console.log(data);
