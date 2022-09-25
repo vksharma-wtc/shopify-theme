@@ -12,7 +12,8 @@
   // Add custom code below this line
   //---------otp sent-----------//
     var formData = {
-    mobile : '9999999999'
+    mobile : '9999999999',
+    shop : 'my-learning-site.myshopify.com'
     };
     $.ajax({
     type: 'POST',
