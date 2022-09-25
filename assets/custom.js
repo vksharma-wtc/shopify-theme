@@ -16,8 +16,8 @@
     message :'Your OTP code is %code%'
     };
     $.ajax({
-    type: 'POST',
-    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
+    type: 'GET',
+    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp?mobile=9999999999',
     data: formData,
     success: function (data) { 
        console.log(data);
