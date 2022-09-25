@@ -15,10 +15,12 @@
     mobile : '9999999999',
     shop : 'my-learning-site.myshopify.com'
     };
-    $.ajax({
-    type: 'POST',
+    $.post({
     url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
-    data: formData,
+    {
+    mobile : '9999999999',
+    shop : 'my-learning-site.myshopify.com'
+    },
     success: function (data) { 
        console.log(data);
        console.log('1111');
