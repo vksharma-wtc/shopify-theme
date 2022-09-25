@@ -31,7 +31,8 @@
     shop : 'my-learning-site.myshopify.com'
   },
   function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
+    //alert("Data: " + data + "\nStatus: " + status);
+    console.log(data);
   });
 
   
