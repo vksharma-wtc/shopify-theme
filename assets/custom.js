@@ -17,7 +17,7 @@
     url: 'https://my-learning-site.myshopify.com/admin/oauth/authorize?client_id=9ff12ccdb6fbd16f7f0022512c5223f0&scope=read_products&redirect_uri=https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/auth/shopify/callback',
     //data: formData,
     success: function (data) { 
-       console.log(data);
+       //console.log(data);
        console.log('1111');
      } 
     });
