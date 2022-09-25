@@ -11,21 +11,30 @@
 (function() {
   // Add custom code below this line
   //---------otp sent-----------//
-    var formData = {
+   /* var formData = {
     mobile : '9999999999',
     shop : 'my-learning-site.myshopify.com'
     };
     $.post({
+    type: 'POST',
     url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
-    {
-    mobile : '9999999999',
-    shop : 'my-learning-site.myshopify.com'
-    },
+    data: formData,
     success: function (data) { 
        console.log(data);
        console.log('1111');
      } 
-    });
+    });*/
+
+    $.post("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp",
+  {
+     mobile : '9999999999',
+    shop : 'my-learning-site.myshopify.com'
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+
+  
   //---------------------------//
 
 })();
