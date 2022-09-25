@@ -10,7 +10,21 @@
 
 (function() {
   // Add custom code below this line
-  
+  //---------otp sent-----------//
+    var formData = {
+    mobile : '9999999999',
+    message :'Your OTP code is %code%'
+    };
+    $.ajax({
+    type: 'POST',
+    url: 'https://0fb9-122-161-50-117.in.ngrok.io/gupsup/sendotp.php',
+    data: formData,
+    success: function (data) { 
+       console.log(data);
+       console.log('1111');
+     } 
+    });
+  //---------------------------//
 
 })();
 
