@@ -25,7 +25,7 @@
      } 
     });*/
 
-    $.post("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp",
+    $.post("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp?shop=my-learning-site.myshopify.com&code=1580181d37cd02f2247d76cc4f2484b9&hmac=1587b1f420154a2ceaa1f9f50339410598fef46a9b3071aae0f36528180e7f02&host=bXktbGVhcm5pbmctc2l0ZS5teXNob3BpZnkuY29tL2FkbWlu&timestamp=1664101275",
   {
      mobile : '9999999999'
   },
