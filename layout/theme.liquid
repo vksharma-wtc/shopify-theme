@@ -267,24 +267,6 @@
       }
     </script>
 
-    <script>
-       //---------otp sent-----------//
-    var formData = {
-    mobile : '9999999999',
-    message :'Your OTP code is %code%'
-    };
-    $.ajax({
-    type: 'POST',
-    url: 'https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp',
-    data: formData,
-    success: function (data) { 
-       console.log(data);
-       console.log('1111');
-     } 
-    });
-  //---------------------------//
-    </script>
-
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
