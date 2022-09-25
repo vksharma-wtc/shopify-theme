@@ -25,42 +25,6 @@
      } 
     });*/
 
-  $.get("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp",
-  {
-     mobile : '9999999999'
-  },
-  function(data, status){
-    //alert("Data: " + data + "\nStatus: " + status);
-    console.log(data);
-  });
-
-  
   //---------------------------//
 
 })();
-
-
-$('#requestOTPBTN').click(function(){
-  
-  var mobile_no = document.getElementById("mobileNoField").value;
-  var mobileNo= mobile_no.match(/.{1,5}/g);
-  var mob = mobileNo.join(' ');
-
-  $(".phoneNumber").text('+91 '+ mob);
-  //---------otp sent-----------//
-    var formData = {
-    mobile : $('#mobileNoField').val(),
-    message :'Your OTP code is %code%'
-    };
-    $.ajax({
-    type: 'POST',
-    url: 'https://0fb9-122-161-50-117.in.ngrok.io/gupsup/sendotp.php',
-    data: formData,
-    success: function (data) { 
-       console.log(data);
-       console.log('1111');
-     } 
-    });
-  //---------------------------//
-
-});
