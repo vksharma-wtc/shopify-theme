@@ -25,7 +25,7 @@
      } 
     });*/
 
-    $.post("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/auth/shopify/sendotp",
+  $.post("https://ebb0-122-161-48-98.in.ngrok.io/shopify-php-app-master/src/public/index.php/sendotp",
   {
      mobile : '9999999999'
   },
